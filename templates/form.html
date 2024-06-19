@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <form action="/send-message" method="POST">
+        {{ csrf_field() }}
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
